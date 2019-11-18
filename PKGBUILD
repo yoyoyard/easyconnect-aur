@@ -11,6 +11,6 @@ install=${pkgname}.install
 source=("http://download.sangfor.com.cn/download/product/sslvpn/pkg/linux_01/EasyConnect_x64.deb")
 md5sums=('6ed6273f7754454f19835a456ee263e3')
 package(){
-	tar xzf data.tar.gz -C "${pkgdir}"
-	install -D -m644 "${pkgdir}/usr/share/sangfor/EasyConnect/LICENSES.chromium.html" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+  tar xzf data.tar.gz -C "${pkgdir}"
+  install -D -m644 "${pkgdir}/usr/share/sangfor/EasyConnect/LICENSES.chromium.html" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
 }
